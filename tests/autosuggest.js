@@ -30,7 +30,7 @@ function create(d, opts) {
     data = d || data;
     options = opts || options;
 
-    return $('<input type="text" name="autosuggest" value=""></input>')
+    return $('<input type="text" name="autosuggest" value="" id="auto"></input>')
         .appendTo("#container").autoSuggest(data, options);
 }
 

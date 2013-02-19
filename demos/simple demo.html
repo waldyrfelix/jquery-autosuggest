@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="jquery.autoSuggest.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="jquery.autoSuggest.js"></script>
+    <script>
+        var auto = null;
+        $(function () {
+            var data = [
+                { id: 1, value: 'apple' },
+                { id: 2, value: 'orange' },
+                { id: 3, value: 'banana' },
+                { id: 4, value: 'strawberry' },
+                { id: 5, value: 'pineapple' },
+                { id: 6, value: 'mango' }
+            ];
+            auto = $('#autocomplete').autoSuggest(data);
+        });
+    </script>
+</head>
+<body>
+    <input type="text" id="autocomplete" />
+</body>
+</html>
